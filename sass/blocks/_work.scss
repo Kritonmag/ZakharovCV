@@ -1,0 +1,44 @@
+.work {
+  background-color: #e4d9d9;
+  padding: 130px 0 40px 0;
+}
+
+.work__experience:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.work__h2 {
+  color: #7d9cb6;
+  margin-bottom: 25px;
+}
+
+.work__title {
+  margin-bottom: 10px;
+}
+
+.work__date {
+  margin-bottom: 10px;
+}
+
+.work__descr {
+  margin-bottom: 5px;
+}
+
+.work__list {
+  margin-left: 25px;
+}
+
+@media (max-width: 755px) {
+  .work {
+    text-align: center;
+    padding: 120px 0 20px 0;
+  }
+
+  .work__list {
+    text-align: left;
+  }
+
+  .work__descr {
+    text-align: left;
+  }
+}

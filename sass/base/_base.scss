@@ -1,0 +1,50 @@
+html,
+body {
+  font-size: 16px;
+  font-family: 'Mukta', sans-serif;
+  color: $black;
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.none {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 68px;
+  line-height: 1;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.small__title {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.text {
+  color: #888888;
+  font-weight: 400;
+  font-size: 18px;
+}

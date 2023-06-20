@@ -1,0 +1,175 @@
+.header {
+  background-color: #e4d9d9;
+  padding: 130px 0 40px 0;
+}
+
+.header__row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.header__description {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title {
+  font-size: 54px;
+  margin-bottom: 30px;
+}
+
+.header__title__row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header__subtitle-mobl {
+  display: none;
+}
+
+#header__subtitle {
+  animation: type-effect 2s steps(40, end) infinite;
+  white-space: nowrap;
+  height: 30px;
+}
+
+@keyframes type-effect {
+  from {
+    width: 0;
+  }
+}
+
+.header__titile__img {
+  width: 13%;
+  overflow: hidden;
+}
+
+.header__info {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #888888;
+  font-weight: 400;
+}
+
+.header__info-rus {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #888888;
+  font-weight: 400;
+}
+
+.header__img {
+  width: 50%;
+  height: 50%;
+
+  img {
+    width: 65%;
+    min-height: 310px;
+    min-width: 230px;
+    border: 3px solid #9ab9d2;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.header__skills {}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills__title {
+  border-right: 2px solid #9ab9d2;
+}
+
+.skills__list {
+  margin-left: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.skill__item {
+  display: flex;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: #9ab9d2;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 810px) {
+  .header__titile__img {
+    display: none;
+  }
+}
+
+@media (max-width: 755px) {
+  .header {
+    padding: 120px 0 20px 0;
+  }
+
+  .header__row {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__description {
+    order: 2;
+    text-align: center;
+  }
+
+  .header__title__main {
+    margin-bottom: 15px;
+  }
+
+  #header__subtitle {
+    display: none;
+  }
+
+  .header__subtitle-mobl {
+    display: block;
+  }
+
+  .header__title__row {
+    display: block;
+  }
+
+  .header__img {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills__list {
+    justify-content: normal;
+    gap: 15px;
+  }
+
+
+  .skill__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header__title__main {
+    font-size: 48px;
+  }
+
+  .header__subtitle {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,165 @@
+.nav {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 35%);
+  border-bottom: 1px solid #9ab9d2;
+}
+
+.nav__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1170px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.nav__tools {
+  display: flex;
+  align-items: center;
+  width: 42.5%;
+  justify-content: space-between;
+}
+
+.nav__tool {
+  display: flex;
+}
+
+.changeLang {
+  cursor: pointer;
+  margin-right: 25px;
+  border-bottom: 2px solid #000;
+}
+
+.changeLang:hover {
+  color: #9ab9d2;
+  border-bottom: 2px solid #9ab9d2;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.nav__item {
+  border-bottom: 1px solid #000;
+  transition: 0.3s;
+}
+
+.nav__item:hover {
+  color: #9ab9d2;
+  border-bottom: 1px solid #9ab9d2;
+}
+
+.nav__list-rus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.nav__slider {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav__slider__state {
+  display: contents;
+}
+
+.slider__theme {
+  width: 35px;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #a3a3a3;
+  border-radius: 34px;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: .4s;
+}
+
+input:checked+.slider {
+  background-color: #9ab9d2;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+
+@media (max-width: 755px) {
+
+  .nav {
+    padding: 10px;
+  }
+
+  .nav__row {
+    display: block;
+    justify-content: space-around;
+  }
+
+  .nav__tools {
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+
+  .nav__list {
+    margin: 0 auto;
+  }
+
+  .nav__list-rus {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 475px) {
+
+  .nav__list {
+    gap: 10px;
+  }
+
+  .nav__list-rus {
+    gap: 10px;
+  }
+}
